@@ -70,20 +70,44 @@
     <Compile Include="AssemblyInfo.cs">
       <id>c173dcca-cc45-4601-8adc-5469e791f1b8</id>
     </Compile>
+    <Compile Include="CloseRanorex.cs">
+      <BoundTo>7833bb64-5ad3-4e03-be6e-0b685c7b265f</BoundTo>
+      <DependentUpon>CloseRanorex.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>62f43e79-148e-45bb-835c-97cbd4df6c07</id>
+    </Compile>
+    <Compile Include="CloseRanorex.UserCode.cs">
+      <BoundTo>7833bb64-5ad3-4e03-be6e-0b685c7b265f</BoundTo>
+      <DependentUpon>CloseRanorex.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ef5397ac-cdef-4e76-8fe5-e9018c54b43d</id>
+    </Compile>
+    <Compile Include="DownloadTrial.cs">
+      <BoundTo>590224f9-7dcb-488a-bccc-eb7cf11bafca</BoundTo>
+      <DependentUpon>DownloadTrial.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>50f23d5a-00e3-4633-b036-e68a227cf2c1</id>
+    </Compile>
+    <Compile Include="DownloadTrial.UserCode.cs">
+      <BoundTo>590224f9-7dcb-488a-bccc-eb7cf11bafca</BoundTo>
+      <DependentUpon>DownloadTrial.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cf7aeff4-bde0-438c-a78a-2d37163c0e24</id>
+    </Compile>
+    <Compile Include="OpenRanorex.cs">
+      <BoundTo>37ce0584-7ca4-40e8-8a3e-72b674016a68</BoundTo>
+      <DependentUpon>OpenRanorex.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6a3d5944-0bae-428f-b8a4-40f93d94f3f6</id>
+    </Compile>
+    <Compile Include="OpenRanorex.UserCode.cs">
+      <BoundTo>37ce0584-7ca4-40e8-8a3e-72b674016a68</BoundTo>
+      <DependentUpon>OpenRanorex.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>533de08c-65e8-4953-90ba-ba4ebf5f831f</id>
+    </Compile>
     <Compile Include="Program.cs">
       <id>14b74804-e964-419b-9b11-8a6798806aad</id>
-    </Compile>
-    <Compile Include="Recording1.cs">
-      <BoundTo>b25bcd65-1e6c-49de-9ba1-c5debb4b2597</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>6c22c02a-0f36-4e8c-87cd-5904e1f1428e</id>
-    </Compile>
-    <Compile Include="Recording1.UserCode.cs">
-      <BoundTo>b25bcd65-1e6c-49de-9ba1-c5debb4b2597</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>5fdd3b69-787d-449c-8ea5-7bba6234fbc4</id>
     </Compile>
     <Compile Include="TestExpoDemoRepository.cs">
       <BoundTo>56510cc8-c50d-472a-b8dd-7ca6d274e472</BoundTo>
@@ -96,10 +120,20 @@
     <None Include="app.config">
       <id>f939b6c8-39c3-4f63-a0d4-fd50bb2840fb</id>
     </None>
-    <None Include="Recording1.rxrec">
+    <None Include="CloseRanorex.rxrec">
       <BoundTo>56510cc8-c50d-472a-b8dd-7ca6d274e472</BoundTo>
-      <id>b25bcd65-1e6c-49de-9ba1-c5debb4b2597</id>
-      <recordtableid>e8239643-e67f-4a96-94aa-9aee020dd983</recordtableid>
+      <id>7833bb64-5ad3-4e03-be6e-0b685c7b265f</id>
+      <recordtableid>e33648a1-1924-461d-8546-dfc7d0d2f7f8</recordtableid>
+    </None>
+    <None Include="DownloadTrial.rxrec">
+      <BoundTo>56510cc8-c50d-472a-b8dd-7ca6d274e472</BoundTo>
+      <id>590224f9-7dcb-488a-bccc-eb7cf11bafca</id>
+      <recordtableid>cede34c5-b676-4a71-b9b2-44941f104e5c</recordtableid>
+    </None>
+    <None Include="OpenRanorex.rxrec">
+      <BoundTo>56510cc8-c50d-472a-b8dd-7ca6d274e472</BoundTo>
+      <id>37ce0584-7ca4-40e8-8a3e-72b674016a68</id>
+      <recordtableid>6e19da6e-cea5-4818-bea7-1edacb0a9772</recordtableid>
     </None>
     <None Include="TestExpoDemoRepository.rximg">
       <BoundTo>56510cc8-c50d-472a-b8dd-7ca6d274e472</BoundTo>

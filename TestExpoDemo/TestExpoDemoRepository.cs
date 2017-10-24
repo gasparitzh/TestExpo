@@ -27,6 +27,7 @@ namespace TestExpoDemo
     public partial class TestExpoDemoRepository : RepoGenBaseFolder
     {
         static TestExpoDemoRepository instance = new TestExpoDemoRepository();
+        TestExpoDemoRepositoryFolders.TestAutomationForGUITestingRanoreAppFolder _testautomationforguitestingranore;
 
         /// <summary>
         /// Gets the singleton class instance representing the TestExpoDemoRepository element repository.
@@ -43,6 +44,7 @@ namespace TestExpoDemo
         public TestExpoDemoRepository() 
             : base("TestExpoDemoRepository", "/", null, 0, false, "d0e0079b-6379-4f58-878e-815af3a51486", ".\\RepositoryImages\\TestExpoDemoRepositoryd0e0079b.rximgres")
         {
+            _testautomationforguitestingranore = new TestExpoDemoRepositoryFolders.TestAutomationForGUITestingRanoreAppFolder(this);
         }
 
 #region Variables
@@ -60,6 +62,15 @@ namespace TestExpoDemo
                 return _selfInfo;
             }
         }
+
+        /// <summary>
+        /// The TestAutomationForGUITestingRanore folder.
+        /// </summary>
+        [RepositoryFolder("07b82945-4f59-4eb8-a006-10e9904e3f63")]
+        public virtual TestExpoDemoRepositoryFolders.TestAutomationForGUITestingRanoreAppFolder TestAutomationForGUITestingRanore
+        {
+            get { return _testautomationforguitestingranore; }
+        }
     }
 
     /// <summary>
@@ -68,6 +79,202 @@ namespace TestExpoDemo
     [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.2")]
     public partial class TestExpoDemoRepositoryFolders
     {
+        /// <summary>
+        /// The TestAutomationForGUITestingRanoreAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("07b82945-4f59-4eb8-a006-10e9904e3f63")]
+        public partial class TestAutomationForGUITestingRanoreAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _atagdownloadtrialInfo;
+            RepoItemInfo _formfirstnameInfo;
+            RepoItemInfo _formlastnameInfo;
+            RepoItemInfo _formemailInfo;
+            RepoItemInfo _registerInfo;
+            RepoItemInfo _iconexitInfo;
+
+            /// <summary>
+            /// Creates a new TestAutomationForGUITestingRanore  folder.
+            /// </summary>
+            public TestAutomationForGUITestingRanoreAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("TestAutomationForGUITestingRanore", "/dom[@domain='www.ranorex.com']", parentFolder, 30000, null, false, "07b82945-4f59-4eb8-a006-10e9904e3f63", "")
+            {
+                _atagdownloadtrialInfo = new RepoItemInfo(this, "ATagDownloadTrial", ".//div[#'c14071']/?/?/a[@innertext='Download Trial']", 30000, null, "684aed8b-ce9b-461f-af3c-1518ed820dc1");
+                _formfirstnameInfo = new RepoItemInfo(this, "FormFirstName", ".//input[#'form-FirstName']", 30000, null, "21b41489-a3ba-41f7-a578-8f36ba92f628");
+                _formlastnameInfo = new RepoItemInfo(this, "FormLastName", ".//input[#'form-LastName']", 30000, null, "8db5321d-c96c-4b82-b143-2a1616dd3552");
+                _formemailInfo = new RepoItemInfo(this, "FormEmail", ".//input[#'form-Email']", 30000, null, "c5a6a128-c782-4be5-8f60-f9f1179bca90");
+                _registerInfo = new RepoItemInfo(this, "Register", ".//fieldset[#'first-form']/?/?/button[@innertext='Register']", 30000, null, "dcd307f3-19b9-469b-b836-ebea3a829702");
+                _iconexitInfo = new RepoItemInfo(this, "IconExit", ".//fieldset[#'second-form']//span", 30000, null, "d9f04c70-369b-45f6-bbf6-0211c70e4c42");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("07b82945-4f59-4eb8-a006-10e9904e3f63")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("07b82945-4f59-4eb8-a006-10e9904e3f63")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ATagDownloadTrial item.
+            /// </summary>
+            [RepositoryItem("684aed8b-ce9b-461f-af3c-1518ed820dc1")]
+            public virtual Ranorex.ATag ATagDownloadTrial
+            {
+                get
+                {
+                    return _atagdownloadtrialInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ATagDownloadTrial item info.
+            /// </summary>
+            [RepositoryItemInfo("684aed8b-ce9b-461f-af3c-1518ed820dc1")]
+            public virtual RepoItemInfo ATagDownloadTrialInfo
+            {
+                get
+                {
+                    return _atagdownloadtrialInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FormFirstName item.
+            /// </summary>
+            [RepositoryItem("21b41489-a3ba-41f7-a578-8f36ba92f628")]
+            public virtual Ranorex.InputTag FormFirstName
+            {
+                get
+                {
+                    return _formfirstnameInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FormFirstName item info.
+            /// </summary>
+            [RepositoryItemInfo("21b41489-a3ba-41f7-a578-8f36ba92f628")]
+            public virtual RepoItemInfo FormFirstNameInfo
+            {
+                get
+                {
+                    return _formfirstnameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FormLastName item.
+            /// </summary>
+            [RepositoryItem("8db5321d-c96c-4b82-b143-2a1616dd3552")]
+            public virtual Ranorex.InputTag FormLastName
+            {
+                get
+                {
+                    return _formlastnameInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FormLastName item info.
+            /// </summary>
+            [RepositoryItemInfo("8db5321d-c96c-4b82-b143-2a1616dd3552")]
+            public virtual RepoItemInfo FormLastNameInfo
+            {
+                get
+                {
+                    return _formlastnameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FormEmail item.
+            /// </summary>
+            [RepositoryItem("c5a6a128-c782-4be5-8f60-f9f1179bca90")]
+            public virtual Ranorex.InputTag FormEmail
+            {
+                get
+                {
+                    return _formemailInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FormEmail item info.
+            /// </summary>
+            [RepositoryItemInfo("c5a6a128-c782-4be5-8f60-f9f1179bca90")]
+            public virtual RepoItemInfo FormEmailInfo
+            {
+                get
+                {
+                    return _formemailInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Register item.
+            /// </summary>
+            [RepositoryItem("dcd307f3-19b9-469b-b836-ebea3a829702")]
+            public virtual Ranorex.ButtonTag Register
+            {
+                get
+                {
+                    return _registerInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Register item info.
+            /// </summary>
+            [RepositoryItemInfo("dcd307f3-19b9-469b-b836-ebea3a829702")]
+            public virtual RepoItemInfo RegisterInfo
+            {
+                get
+                {
+                    return _registerInfo;
+                }
+            }
+
+            /// <summary>
+            /// The IconExit item.
+            /// </summary>
+            [RepositoryItem("d9f04c70-369b-45f6-bbf6-0211c70e4c42")]
+            public virtual Ranorex.SpanTag IconExit
+            {
+                get
+                {
+                    return _iconexitInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The IconExit item info.
+            /// </summary>
+            [RepositoryItemInfo("d9f04c70-369b-45f6-bbf6-0211c70e4c42")]
+            public virtual RepoItemInfo IconExitInfo
+            {
+                get
+                {
+                    return _iconexitInfo;
+                }
+            }
+        }
+
     }
 #pragma warning restore 0436
 }

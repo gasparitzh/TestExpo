@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace TestExpoDemo
 {
-    public partial class Recording1
+    public partial class OpenRanorex
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

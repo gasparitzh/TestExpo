@@ -1,19 +1,109 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<repository
-name="TestExpoDemoRepository"
+﻿<repository
 id="a4daa534-09a7-4cee-81fa-f7032c9ef0c7"
+name="TestExpoDemoRepository"
 rxversion="7.2">
-  <codegen
-  classname="TestExpoDemoRepository"
-  namespace="TestExpoDemo"/>
-  <rootfolder
-  name="Root"
-  id="d0e0079b-6379-4f58-878e-815af3a51486"
-  searchtimeout="30000ms"
-  capname="unknown"
-  isrooted="True"
-  usecache="True">
-    <basepath/>
-  </rootfolder>
-  <variables/>
+	<codegen
+	classname="TestExpoDemoRepository"
+	namespace="TestExpoDemo">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="d0e0079b-6379-4f58-878e-815af3a51486"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="07b82945-4f59-4eb8-a006-10e9904e3f63"
+		isrooted="True"
+		name="TestAutomationForGUITestingRanore"
+		refpath="/dom[@domain='www.ranorex.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="684aed8b-ce9b-461f-af3c-1518ed820dc1"
+			name="ATagDownloadTrial"
+			refimgid="37d2eb35-536d-4c4e-a33e-2009ac28c95b"
+			refpath="/dom[@domain='www.ranorex.com']//div[#'c14071']/div/a[@innertext='Download Trial']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.ranorex.com']//div[#'c14071']/?/?/a[@innertext='Download Trial']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="21b41489-a3ba-41f7-a578-8f36ba92f628"
+			name="FormFirstName"
+			refimgid="56f4a06c-d692-48ce-a150-1d4810e04128"
+			refpath="/dom[@domain='www.ranorex.com']//input[#'form-FirstName']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.ranorex.com']//input[#'form-FirstName']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="8db5321d-c96c-4b82-b143-2a1616dd3552"
+			name="FormLastName"
+			refimgid="963f378b-e5a3-48bf-9b6d-1bd397347eed"
+			refpath="/dom[@domain='www.ranorex.com']//input[#'form-LastName']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.ranorex.com']//input[#'form-LastName']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="c5a6a128-c782-4be5-8f60-f9f1179bca90"
+			name="FormEmail"
+			refimgid="cb4945de-3e6b-419c-bfcd-207f79be3666"
+			refpath="/dom[@domain='www.ranorex.com']//input[#'form-Email']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.ranorex.com']//input[#'form-Email']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="dcd307f3-19b9-469b-b836-ebea3a829702"
+			name="Register"
+			refimgid="24354b75-d75a-4ab5-84a7-cddb5b6f8454"
+			refpath="/dom[@domain='www.ranorex.com']//fieldset[#'first-form']/div[2]/button[@innertext='Register']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.ranorex.com']//fieldset[#'first-form']/?/?/button[@innertext='Register']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="d9f04c70-369b-45f6-bbf6-0211c70e4c42"
+			name="IconExit"
+			refimgid="f0ae0843-b8c2-405a-a482-3d04eaa8933b"
+			refpath="/dom[@domain='www.ranorex.com']//fieldset[#'second-form']/div[1]/div[1]/span"
+			searchtimeout="30000ms">
+				/dom[@domain='www.ranorex.com']//fieldset[#'second-form']//span
+			</item>
+			<basepath>
+				/dom[@domain='www.ranorex.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
 </repository>

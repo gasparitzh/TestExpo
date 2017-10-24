@@ -24,29 +24,29 @@ namespace TestExpoDemo
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Recording1 recording.
+    ///The OpenRanorex recording.
     /// </summary>
-    [TestModule("e8239643-e67f-4a96-94aa-9aee020dd983", ModuleType.Recording, 1)]
-    public partial class Recording1 : ITestModule
+    [TestModule("6e19da6e-cea5-4818-bea7-1edacb0a9772", ModuleType.Recording, 1)]
+    public partial class OpenRanorex : ITestModule
     {
         /// <summary>
         /// Holds an instance of the TestExpoDemoRepository repository.
         /// </summary>
         public static TestExpoDemoRepository repo = TestExpoDemoRepository.Instance;
 
-        static Recording1 instance = new Recording1();
+        static OpenRanorex instance = new OpenRanorex();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Recording1()
+        public OpenRanorex()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Recording1 Instance
+        public static OpenRanorex Instance
         {
             get { return instance; }
         }
@@ -79,6 +79,10 @@ namespace TestExpoDemo
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Website", "Opening web site 'www.ranorex.com' with browser 'chrome' in normal mode.", new RecordItemIndex(0));
+            Host.Current.OpenBrowser("www.ranorex.com", "chrome", "", false, false, false, false, false);
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data

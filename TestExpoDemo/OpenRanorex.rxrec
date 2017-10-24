@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="e8239643-e67f-4a96-94aa-9aee020dd983"
-mode="Global"
+id="6e19da6e-cea5-4818-bea7-1edacb0a9772"
+mode="Desktop"
 rxversion="7.2">
 	<name>
-		Recording1
+		OpenRanorex
 	</name>
 	<repeatcount>
 		1
@@ -23,12 +23,30 @@ rxversion="7.2">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Recording1"
+	classname="OpenRanorex"
 	namespace="TestExpoDemo">
 	</codegen>
 	<variables>
 	</variables>
 	<recorditems>
+		<openwebsiterecorditem
+		args=""
+		browser="chrome"
+		clearcache="False"
+		clearcookies="False"
+		enabled="True"
+		incognito="False"
+		killexisting="False"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<url>
+				www.ranorex.com
+			</url>
+		</openwebsiterecorditem>
 	</recorditems>
 	<repository
 	id="a4daa534-09a7-4cee-81fa-f7032c9ef0c7"
@@ -46,7 +64,7 @@ rxversion="7.2">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Recording1.UserCode.cs
+		OpenRanorex.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>
