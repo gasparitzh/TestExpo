@@ -4,6 +4,12 @@ rxversion="7.2">
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<testmodule
+			id="0c2bec9f-ee7b-4059-955b-95036f4de4b7"
+			name="CloseRanorex"
+			ref="e33648a1-1924-461d-8546-dfc7d0d2f7f8"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="4400f77c-dfab-46c5-aa43-dad0febba05a"
 			name="OpenRanorex"
 			ref="6e19da6e-cea5-4818-bea7-1edacb0a9772"
@@ -11,7 +17,7 @@ rxversion="7.2">
 			</testmodule>
 			<testcase
 			id="57a472da-3951-4224-9989-a3b8c0f1fed7"
-			name="SampleTest">
+			name="IntegrationTest">
 			</testcase>
 			<testmodule
 			id="6e9b3afc-de2c-4fad-b516-cc9d35a3f8e5"
@@ -20,11 +26,31 @@ rxversion="7.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="76ee85ac-7a3d-450b-bc79-73b7229c6968"
+			name="OpenRanorex"
+			ref="6e19da6e-cea5-4818-bea7-1edacb0a9772"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="8f7a841e-1fd6-46aa-b9e5-6923c052677f"
+			name="DownloadTriaUsingCode"
+			ref="94523172-f9a9-4ae3-a99f-81bfcf8eaac0"
+			type="UserCode">
+			</testmodule>
+			<testcase
+			id="91eb6f34-bf9d-4926-8e11-278e00f11ecf"
+			name="Demo">
+			</testcase>
+			<testmodule
 			id="c2a31e28-1711-47d8-b9b5-9fe8eda4bfcf"
 			name="CloseRanorex"
 			ref="e33648a1-1924-461d-8546-dfc7d0d2f7f8"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="e09342d0-39da-479d-a290-95e34cbf6512"
+			name="UserCodeCollectionTest">
+			</testcase>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -53,8 +79,12 @@ rxversion="7.2">
 				id="f56b881a-fed0-45e7-ae86-7e386afa13bf"
 				name="TestExpoDemo">
 					<testcase
+					id="91eb6f34-bf9d-4926-8e11-278e00f11ecf"
+					name="Demo">
+					</testcase>
+					<testcase
 					id="57a472da-3951-4224-9989-a3b8c0f1fed7"
-					name="SampleTest">
+					name="IntegrationTest">
 						<testmodule
 						id="4400f77c-dfab-46c5-aa43-dad0febba05a"
 						name="OpenRanorex">
@@ -65,6 +95,22 @@ rxversion="7.2">
 						</testmodule>
 						<testmodule
 						id="c2a31e28-1711-47d8-b9b5-9fe8eda4bfcf"
+						name="CloseRanorex">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="e09342d0-39da-479d-a290-95e34cbf6512"
+					name="UserCodeCollectionTest">
+						<testmodule
+						id="76ee85ac-7a3d-450b-bc79-73b7229c6968"
+						name="OpenRanorex">
+						</testmodule>
+						<testmodule
+						id="8f7a841e-1fd6-46aa-b9e5-6923c052677f"
+						name="DownloadTriaUsingCode">
+						</testmodule>
+						<testmodule
+						id="0c2bec9f-ee7b-4059-955b-95036f4de4b7"
 						name="CloseRanorex">
 						</testmodule>
 					</testcase>
@@ -80,6 +126,12 @@ rxversion="7.2">
 		name="TestRun">
 			<testcontainer
 			id="57a472da-3951-4224-9989-a3b8c0f1fed7">
+			</testcontainer>
+			<testcontainer
+			id="91eb6f34-bf9d-4926-8e11-278e00f11ecf">
+			</testcontainer>
+			<testcontainer
+			id="e09342d0-39da-479d-a290-95e34cbf6512">
 			</testcontainer>
 			<testcontainer
 			id="f56b881a-fed0-45e7-ae86-7e386afa13bf">

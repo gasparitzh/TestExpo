@@ -79,8 +79,8 @@ namespace TestExpoDemo
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TestAutomationForGUITestingRanore.ATagDownloadTrial' at 146;23.", repo.TestAutomationForGUITestingRanore.ATagDownloadTrialInfo, new RecordItemIndex(0));
-            repo.TestAutomationForGUITestingRanore.ATagDownloadTrial.Click("146;23");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TestAutomationForGUITestingRanore.DownloadTrialButton' at 146;23.", repo.TestAutomationForGUITestingRanore.DownloadTrialButtonInfo, new RecordItemIndex(0));
+            repo.TestAutomationForGUITestingRanore.DownloadTrialButton.Click("146;23");
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TestAutomationForGUITestingRanore.FormFirstName' at 76;20.", repo.TestAutomationForGUITestingRanore.FormFirstNameInfo, new RecordItemIndex(1));

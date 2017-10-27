@@ -94,6 +94,9 @@
       <UserCode>true</UserCode>
       <id>cf7aeff4-bde0-438c-a78a-2d37163c0e24</id>
     </Compile>
+    <Compile Include="DownloadTriaUsingCode.cs">
+      <id>55ce7a1f-a956-4db0-b583-b8b3d19b798f</id>
+    </Compile>
     <Compile Include="OpenRanorex.cs">
       <BoundTo>37ce0584-7ca4-40e8-8a3e-72b674016a68</BoundTo>
       <DependentUpon>OpenRanorex.rxrec</DependentUpon>

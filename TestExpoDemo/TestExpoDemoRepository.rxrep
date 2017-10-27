@@ -26,7 +26,7 @@ rxversion="7.2">
 			addcaps="unknown,webelement,atag"
 			capname="atag"
 			id="684aed8b-ce9b-461f-af3c-1518ed820dc1"
-			name="ATagDownloadTrial"
+			name="DownloadTrialButton"
 			refimgid="37d2eb35-536d-4c4e-a33e-2009ac28c95b"
 			refpath="/dom[@domain='www.ranorex.com']//div[#'c14071']/div/a[@innertext='Download Trial']"
 			searchtimeout="30000ms">
@@ -81,6 +81,16 @@ rxversion="7.2">
 			refpath="/dom[@domain='www.ranorex.com']//fieldset[#'second-form']/div[1]/div[1]/span"
 			searchtimeout="30000ms">
 				/dom[@domain='www.ranorex.com']//fieldset[#'second-form']//span
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="d561959d-6f61-4f86-ae65-6cf5e7ed8879"
+			name="TellUsMoreAboutYourself"
+			refimgid="c3d642dc-2ef5-453d-8f07-dd5bb6c14498"
+			refpath="/dom[@domain='www.ranorex.com']//fieldset[#'second-form']/div[1]/div[2]/span[@innertext='Tell us more about yourself ...']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.ranorex.com']//fieldset[#'second-form']//span[@innertext~'^Tell\ us\ more\ about\ yourse']
 			</item>
 			<basepath>
 				/dom[@domain='www.ranorex.com']

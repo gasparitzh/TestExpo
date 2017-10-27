@@ -85,12 +85,13 @@ namespace TestExpoDemo
         [RepositoryFolder("07b82945-4f59-4eb8-a006-10e9904e3f63")]
         public partial class TestAutomationForGUITestingRanoreAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _atagdownloadtrialInfo;
+            RepoItemInfo _downloadtrialbuttonInfo;
             RepoItemInfo _formfirstnameInfo;
             RepoItemInfo _formlastnameInfo;
             RepoItemInfo _formemailInfo;
             RepoItemInfo _registerInfo;
             RepoItemInfo _iconexitInfo;
+            RepoItemInfo _tellusmoreaboutyourselfInfo;
 
             /// <summary>
             /// Creates a new TestAutomationForGUITestingRanore  folder.
@@ -98,12 +99,13 @@ namespace TestExpoDemo
             public TestAutomationForGUITestingRanoreAppFolder(RepoGenBaseFolder parentFolder) :
                     base("TestAutomationForGUITestingRanore", "/dom[@domain='www.ranorex.com']", parentFolder, 30000, null, false, "07b82945-4f59-4eb8-a006-10e9904e3f63", "")
             {
-                _atagdownloadtrialInfo = new RepoItemInfo(this, "ATagDownloadTrial", ".//div[#'c14071']/?/?/a[@innertext='Download Trial']", 30000, null, "684aed8b-ce9b-461f-af3c-1518ed820dc1");
+                _downloadtrialbuttonInfo = new RepoItemInfo(this, "DownloadTrialButton", ".//div[#'c14071']/?/?/a[@innertext='Download Trial']", 30000, null, "684aed8b-ce9b-461f-af3c-1518ed820dc1");
                 _formfirstnameInfo = new RepoItemInfo(this, "FormFirstName", ".//input[#'form-FirstName']", 30000, null, "21b41489-a3ba-41f7-a578-8f36ba92f628");
                 _formlastnameInfo = new RepoItemInfo(this, "FormLastName", ".//input[#'form-LastName']", 30000, null, "8db5321d-c96c-4b82-b143-2a1616dd3552");
                 _formemailInfo = new RepoItemInfo(this, "FormEmail", ".//input[#'form-Email']", 30000, null, "c5a6a128-c782-4be5-8f60-f9f1179bca90");
                 _registerInfo = new RepoItemInfo(this, "Register", ".//fieldset[#'first-form']/?/?/button[@innertext='Register']", 30000, null, "dcd307f3-19b9-469b-b836-ebea3a829702");
                 _iconexitInfo = new RepoItemInfo(this, "IconExit", ".//fieldset[#'second-form']//span", 30000, null, "d9f04c70-369b-45f6-bbf6-0211c70e4c42");
+                _tellusmoreaboutyourselfInfo = new RepoItemInfo(this, "TellUsMoreAboutYourself", ".//fieldset[#'second-form']//span[@innertext~'^Tell\\ us\\ more\\ about\\ yourse']", 30000, null, "d561959d-6f61-4f86-ae65-6cf5e7ed8879");
             }
 
             /// <summary>
@@ -131,26 +133,26 @@ namespace TestExpoDemo
             }
 
             /// <summary>
-            /// The ATagDownloadTrial item.
+            /// The DownloadTrialButton item.
             /// </summary>
             [RepositoryItem("684aed8b-ce9b-461f-af3c-1518ed820dc1")]
-            public virtual Ranorex.ATag ATagDownloadTrial
+            public virtual Ranorex.ATag DownloadTrialButton
             {
                 get
                 {
-                    return _atagdownloadtrialInfo.CreateAdapter<Ranorex.ATag>(true);
+                    return _downloadtrialbuttonInfo.CreateAdapter<Ranorex.ATag>(true);
                 }
             }
 
             /// <summary>
-            /// The ATagDownloadTrial item info.
+            /// The DownloadTrialButton item info.
             /// </summary>
             [RepositoryItemInfo("684aed8b-ce9b-461f-af3c-1518ed820dc1")]
-            public virtual RepoItemInfo ATagDownloadTrialInfo
+            public virtual RepoItemInfo DownloadTrialButtonInfo
             {
                 get
                 {
-                    return _atagdownloadtrialInfo;
+                    return _downloadtrialbuttonInfo;
                 }
             }
 
@@ -271,6 +273,30 @@ namespace TestExpoDemo
                 get
                 {
                     return _iconexitInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TellUsMoreAboutYourself item.
+            /// </summary>
+            [RepositoryItem("d561959d-6f61-4f86-ae65-6cf5e7ed8879")]
+            public virtual Ranorex.SpanTag TellUsMoreAboutYourself
+            {
+                get
+                {
+                    return _tellusmoreaboutyourselfInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TellUsMoreAboutYourself item info.
+            /// </summary>
+            [RepositoryItemInfo("d561959d-6f61-4f86-ae65-6cf5e7ed8879")]
+            public virtual RepoItemInfo TellUsMoreAboutYourselfInfo
+            {
+                get
+                {
+                    return _tellusmoreaboutyourselfInfo;
                 }
             }
         }
