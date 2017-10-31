@@ -28,6 +28,7 @@ namespace TestExpoDemo
     {
         static TestExpoDemoRepository instance = new TestExpoDemoRepository();
         TestExpoDemoRepositoryFolders.TestAutomationForGUITestingRanoreAppFolder _testautomationforguitestingranore;
+        TestExpoDemoRepositoryFolders.TestAutomationForGUITestingRanore1AppFolder _testautomationforguitestingranore1;
 
         /// <summary>
         /// Gets the singleton class instance representing the TestExpoDemoRepository element repository.
@@ -45,6 +46,7 @@ namespace TestExpoDemo
             : base("TestExpoDemoRepository", "/", null, 0, false, "d0e0079b-6379-4f58-878e-815af3a51486", ".\\RepositoryImages\\TestExpoDemoRepositoryd0e0079b.rximgres")
         {
             _testautomationforguitestingranore = new TestExpoDemoRepositoryFolders.TestAutomationForGUITestingRanoreAppFolder(this);
+            _testautomationforguitestingranore1 = new TestExpoDemoRepositoryFolders.TestAutomationForGUITestingRanore1AppFolder(this);
         }
 
 #region Variables
@@ -70,6 +72,15 @@ namespace TestExpoDemo
         public virtual TestExpoDemoRepositoryFolders.TestAutomationForGUITestingRanoreAppFolder TestAutomationForGUITestingRanore
         {
             get { return _testautomationforguitestingranore; }
+        }
+
+        /// <summary>
+        /// The TestAutomationForGUITestingRanore1 folder.
+        /// </summary>
+        [RepositoryFolder("5c6d7862-6dc5-4e00-95a7-444c822144d3")]
+        public virtual TestExpoDemoRepositoryFolders.TestAutomationForGUITestingRanore1AppFolder TestAutomationForGUITestingRanore1
+        {
+            get { return _testautomationforguitestingranore1; }
         }
     }
 
@@ -297,6 +308,72 @@ namespace TestExpoDemo
                 get
                 {
                     return _tellusmoreaboutyourselfInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The TestAutomationForGUITestingRanore1AppFolder folder.
+        /// </summary>
+        [RepositoryFolder("5c6d7862-6dc5-4e00-95a7-444c822144d3")]
+        public partial class TestAutomationForGUITestingRanore1AppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _closeInfo;
+
+            /// <summary>
+            /// Creates a new TestAutomationForGUITestingRanore1  folder.
+            /// </summary>
+            public TestAutomationForGUITestingRanore1AppFolder(RepoGenBaseFolder parentFolder) :
+                    base("TestAutomationForGUITestingRanore1", "/form[@title~'^Test\\ Automation\\ for\\ GUI\\ T']", parentFolder, 30000, null, true, "5c6d7862-6dc5-4e00-95a7-444c822144d3", "")
+            {
+                _closeInfo = new RepoItemInfo(this, "Close", ".//tabpage/button[@accessiblename='Close']", 30000, null, "01b02848-cc05-4dda-8fa7-d6955c7f7689");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("5c6d7862-6dc5-4e00-95a7-444c822144d3")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("5c6d7862-6dc5-4e00-95a7-444c822144d3")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Close item.
+            /// </summary>
+            [RepositoryItem("01b02848-cc05-4dda-8fa7-d6955c7f7689")]
+            public virtual Ranorex.Button Close
+            {
+                get
+                {
+                    return _closeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Close item info.
+            /// </summary>
+            [RepositoryItemInfo("01b02848-cc05-4dda-8fa7-d6955c7f7689")]
+            public virtual RepoItemInfo CloseInfo
+            {
+                get
+                {
+                    return _closeInfo;
                 }
             }
         }

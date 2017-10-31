@@ -97,6 +97,18 @@
     <Compile Include="DownloadTriaUsingCode.cs">
       <id>55ce7a1f-a956-4db0-b583-b8b3d19b798f</id>
     </Compile>
+    <Compile Include="FastFeedback.cs">
+      <BoundTo>f6353ee3-6101-4c3c-b0b0-38a4c608b7ef</BoundTo>
+      <DependentUpon>FastFeedback.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8c5cc33b-452b-4d4c-ae22-541a507bd1e4</id>
+    </Compile>
+    <Compile Include="FastFeedback.UserCode.cs">
+      <BoundTo>f6353ee3-6101-4c3c-b0b0-38a4c608b7ef</BoundTo>
+      <DependentUpon>FastFeedback.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>48cdc1cb-e2e2-4780-93cd-36990ea690fa</id>
+    </Compile>
     <Compile Include="OpenRanorex.cs">
       <BoundTo>37ce0584-7ca4-40e8-8a3e-72b674016a68</BoundTo>
       <DependentUpon>OpenRanorex.rxrec</DependentUpon>
@@ -132,6 +144,11 @@
       <BoundTo>56510cc8-c50d-472a-b8dd-7ca6d274e472</BoundTo>
       <id>590224f9-7dcb-488a-bccc-eb7cf11bafca</id>
       <recordtableid>cede34c5-b676-4a71-b9b2-44941f104e5c</recordtableid>
+    </None>
+    <None Include="FastFeedback.rxrec">
+      <BoundTo>56510cc8-c50d-472a-b8dd-7ca6d274e472</BoundTo>
+      <id>f6353ee3-6101-4c3c-b0b0-38a4c608b7ef</id>
+      <recordtableid>c2c1f5a8-3ca9-47f5-b91b-e448460f30f8</recordtableid>
     </None>
     <None Include="OpenRanorex.rxrec">
       <BoundTo>56510cc8-c50d-472a-b8dd-7ca6d274e472</BoundTo>

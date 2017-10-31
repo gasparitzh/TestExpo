@@ -48,18 +48,25 @@ namespace TestExpoDemo
             var repo = TestExpoDemoRepository.Instance;
             Report.Log(ReportLevel.Info, "Click", " Click  DownloadTrialButton", repo.TestAutomationForGUITestingRanore.DownloadTrialButtonInfo, new RecordItemIndex(0));
             repo.TestAutomationForGUITestingRanore.DownloadTrialButton.PerformClick();
+            
             Report.Log(ReportLevel.Info, "WaitFor", "WaitForExist FirstnameField", repo.TestAutomationForGUITestingRanore.FormFirstNameInfo, new RecordItemIndex(1));
             repo.TestAutomationForGUITestingRanore.FormFirstNameInfo.WaitForExists(10000);
+            
             Report.Log(ReportLevel.Info, "SetValue", "SetValue FirstnameField to 'Code'", repo.TestAutomationForGUITestingRanore.FormFirstNameInfo, new RecordItemIndex(2));
             repo.TestAutomationForGUITestingRanore.FormFirstName.TagValue = "Code";
+            
             Report.Log(ReportLevel.Info, "SetValue", "SetValue LastnameField 'Tester' ", repo.TestAutomationForGUITestingRanore.FormLastNameInfo, new RecordItemIndex(3));
             repo.TestAutomationForGUITestingRanore.FormLastName.TagValue = "Tester";
+            
             Report.Log(ReportLevel.Info, "SetValue", "SetValue EmailField 'code@tester.com", repo.TestAutomationForGUITestingRanore.FormEmailInfo, new RecordItemIndex(4));
             repo.TestAutomationForGUITestingRanore.FormEmail.TagValue = "code@tester.com";
+            
             Report.Log(ReportLevel.Info, "Click", "Click RegisterButton", repo.TestAutomationForGUITestingRanore.RegisterInfo, new RecordItemIndex(5));
             repo.TestAutomationForGUITestingRanore.Register.PerformClick();
+            
             Report.Log(ReportLevel.Info, "WaitFor", "WaitForExist TellUsMore", repo.TestAutomationForGUITestingRanore.TellUsMoreAboutYourselfInfo, new RecordItemIndex(6));
             repo.TestAutomationForGUITestingRanore.TellUsMoreAboutYourselfInfo.WaitForExists(10000);
+            
             Report.Log(ReportLevel.Info, "Click", "Click IconExit", repo.TestAutomationForGUITestingRanore.IconExitInfo, new RecordItemIndex(6));
             repo.TestAutomationForGUITestingRanore.IconExit.PerformClick();
             

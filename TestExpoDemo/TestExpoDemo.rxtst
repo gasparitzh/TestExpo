@@ -10,6 +10,12 @@ rxversion="7.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="35651618-8297-4ff7-9678-6f1202219afd"
+			name="DownloadTriaUsingCode"
+			ref="94523172-f9a9-4ae3-a99f-81bfcf8eaac0"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="4400f77c-dfab-46c5-aa43-dad0febba05a"
 			name="OpenRanorex"
 			ref="6e19da6e-cea5-4818-bea7-1edacb0a9772"
@@ -31,16 +37,16 @@ rxversion="7.2">
 			ref="6e19da6e-cea5-4818-bea7-1edacb0a9772"
 			type="Recording">
 			</testmodule>
-			<testmodule
-			id="8f7a841e-1fd6-46aa-b9e5-6923c052677f"
-			name="DownloadTriaUsingCode"
-			ref="94523172-f9a9-4ae3-a99f-81bfcf8eaac0"
-			type="UserCode">
-			</testmodule>
 			<testcase
 			id="91eb6f34-bf9d-4926-8e11-278e00f11ecf"
 			name="Demo">
 			</testcase>
+			<testmodule
+			id="a6973219-2dd9-4181-8580-f43c26a00961"
+			name="FastFeedback"
+			ref="c2c1f5a8-3ca9-47f5-b91b-e448460f30f8"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="c2a31e28-1711-47d8-b9b5-9fe8eda4bfcf"
 			name="CloseRanorex"
@@ -81,6 +87,10 @@ rxversion="7.2">
 					<testcase
 					id="91eb6f34-bf9d-4926-8e11-278e00f11ecf"
 					name="Demo">
+						<testmodule
+						id="a6973219-2dd9-4181-8580-f43c26a00961"
+						name="FastFeedback">
+						</testmodule>
 					</testcase>
 					<testcase
 					id="57a472da-3951-4224-9989-a3b8c0f1fed7"
@@ -106,7 +116,7 @@ rxversion="7.2">
 						name="OpenRanorex">
 						</testmodule>
 						<testmodule
-						id="8f7a841e-1fd6-46aa-b9e5-6923c052677f"
+						id="35651618-8297-4ff7-9678-6f1202219afd"
 						name="DownloadTriaUsingCode">
 						</testmodule>
 						<testmodule

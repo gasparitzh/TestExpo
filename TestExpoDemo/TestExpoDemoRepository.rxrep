@@ -111,6 +111,45 @@ zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
 F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			</icon>
 		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="5c6d7862-6dc5-4e00-95a7-444c822144d3"
+		isrooted="True"
+		name="TestAutomationForGUITestingRanore1"
+		refpath="/form[@title='Test Automation for GUI Testing | Ranorex - Google Chrome']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="01b02848-cc05-4dda-8fa7-d6955c7f7689"
+			name="Close"
+			refimgid="d13df3b1-84d0-40c6-bd0c-3a9eebc21f64"
+			refpath="/form[@title~'^Test\ Automation\ for\ GUI\ T']/container/container[2]/container[2]/tabpagelist/tabpage/button[@accessiblename='Close']"
+			searchtimeout="30000ms">
+				/form[@title~'^Test\ Automation\ for\ GUI\ T']//tabpage/button[@accessiblename='Close']
+			</item>
+			<basepath>
+				/form[@title~'^Test\ Automation\ for\ GUI\ T']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAKFSURBVDhPrZJdSFNhHMaXQUFEBaZTZiV1EUQX
+FkRJ6c6m07lvdVPYlujSuygSlOiiEYSQfd10sZp2nFtiu7GPmyBtaoua86smltNzLKQIhGB5BurG
+eXrPOpqjj6se+PHe/H/P/+Xllfz3wCnJmDdrK5lazT3WrB5gK1XDbFWZn5znpk0lmeLYnzNjURWw
+NuMUEcFWl4NIYEylYIwlYAwKsCZljDGVOcTx9AyqC49EqlXfZ81EXCuoKksrYPQU5nQKzBmo86Im
+xunMuHDRvBDWyzEtCH+5AaMjBVo5ZrXFyXmNvEC0JZIDPU2Go676ZK+hCG/Jlg9k86duN16OLPDP
+wos8M/Ec8z4jvnhO4FvvcXB9hYg/LhoUdVLga3Ttf9CI2ktVGKo4CdbjxmU/B+PNOAwE25043s9E
+kQgokQwUIzlUhGSweBl+y+ZUQb6vsT/fdwYH6QbcqqEQGP26LutuEK7H0faIw3KkFXxICX5ECYQJ
+o7ptqYI8T31wr9eBfT4H9NfseBJegl4QRVlLaO3hsBK9CoyrCKWEEvBv1DtSBbKuur493gYICEWv
+J6dXKm//kjXtHPzBGJKRBlEuBT9GbhJVb00V5NL2Vll3PdZQP3ViILKIZi+HJvcSPIEYJibvp21P
+hBSzKVmIzGvLy+2yr+Z66rDG4d6zaBnuxJWgD00PW5AYq1iXMU4eM0Q1i/rPZHdYnTlElHad3oAd
+0rtWRF7o0uREiBrDlGWLqIqBZJO00+qS0nZkE1Egi7bBQRvAj5dvkBXv+AmlTLR+T1aH1ZLttkZ3
+01Zkumrw+ZVmWRBXR6jYSohqw5R8uzj67+ykjbuOtasKPvafOsSF5DnrnyYtEskPM43KINSheKEA
+AAAASUVORK5CYII=
+			</icon>
+		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>
